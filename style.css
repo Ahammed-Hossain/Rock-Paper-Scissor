@@ -38,7 +38,7 @@ h1 {
 }
 
 .game:hover {
-     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .rock {
@@ -54,6 +54,23 @@ h1 {
     background-color: rgb(186, 223, 235);
     color: rgb(255, 72, 0);
 }
+
+.msg-Container {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg {
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+/* .hide {
+    display: none;
+} */
 
 .points {
     display: flex;
@@ -93,39 +110,187 @@ h1 {
     box-shadow: 8px 8px 18px rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 450px) {
+/* media query starst */
+
+@media (min-width: 320px) and (max-width: 450px) {
 
     h1 {
         font-size: 30px;
     }
+
     .game {
-    height: 80px;
-    width: 80px;
-    font-size: 20px;
-    font-weight: 500;
-    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+        height: 80px;
+        width: 80px;
+        font-size: 20px;
+        font-weight: 500;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+        height: 20vh;
+        gap: 30px;
+    }
+
+    .reset {
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+
+    .msg-Container {
+        height: 80px;
+    }
+
+    .msg {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+    .points {
+        gap: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .player {
+        padding-right: 50px;
+    }
+
+
 }
 
-.container {
-    height: 20vh;
-    gap: 30px;
+
+@media (min-width: 450px) and (max-width: 500px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .game {
+        height: 110px;
+        width: 110px;
+        font-size: 20px;
+        font-weight: 600;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+        height: 30vh;
+        gap: 50px;
+    }
+
+    .reset {
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+
+    .msg-Container {
+        height: 70px;
+    }
+
+    .msg {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .points {
+        gap: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .player {
+        padding-right: 60px;
+    }
 }
 
-.reset {
-    padding: 15px 20px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 20px;
+
+/* @2 */
+@media (min-width: 500px) and (max-width: 610px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .game {
+        height: 110px;
+        width: 110px;
+        font-size: 20px;
+    }
+
+    .container {
+        height: 30vh;
+        gap: 80px;
+    }
+
+    .reset {
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+
+    .msg-Container {
+        height: 70px;
+    }
+
+    .msg {
+        font-size: 20px;
+    }
+
+    .points {
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    .player {
+        padding-right: 60px;
+    }
 }
 
-.points {
-    gap: 10px;
-    font-size: 20px;
-    font-weight: 500;
-}
+/* @3 */
+@media (min-width: 610px) and (max-width: 800px) {
+    h1 {
+        font-size: 45px;
+    }
 
-.player {
-    padding-right: 50px;
-}
-    
+    .game {
+        height: 150px;
+        width: 150px;
+        font-size: 30px;
+        font-weight: 600;
+        box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+    }
+
+    .container {
+        height: 30vh;
+        gap: 80px;
+    }
+
+    .reset {
+        padding: 15px 20px;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 20px;
+    }
+
+    .msg-Container {
+        height: 100px;
+    }
+
+    .msg {
+        font-size: 30px;
+    }
+
+    .points {
+        gap: 20px;
+        font-size: 25px;
+    }
+
+    .player {
+        padding-right: 80px;
+    }
+
 }
